@@ -20,6 +20,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     
         <!-- SweetAlert For windows -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <style>
+            .head-gradient{
+                background: linear-gradient(90deg, rgba(0,21,36,0.15730042016806722) 0%, rgba(121,9,117,0.7147233893557423) 44%, rgba(0,212,255,1) 100%);
+            }
+        </style>
+
 </head>
 <body>
     <div class="container">
