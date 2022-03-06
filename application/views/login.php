@@ -18,7 +18,6 @@
   </div>
   </div>
 
-
 <script type="text/javascript">
   $(document).on("submit","#login",()=>{
       var toServer=new FormData();
@@ -39,11 +38,12 @@
           }
       })
       .then(data => {
-        alert(data.message); window.location.reload();
+        alert(data.message);
+        window.location.href = '<?php echo base_url('login/home'); ?>';
       })
       .catch(() => {
           console.log("Network connection error");
-          alert("Reloading"); window.location.reload();
+          alert("Reloading");
       });
   });
 </script>
