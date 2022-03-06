@@ -12,7 +12,7 @@ class Login extends CI_Controller {
 		if(empty($_POST['UName']) || empty($_POST['PWord'])){
 			echo $this->sendJson(array("message"=>"Invalid Data"));
 		}else{
-			if($_POST['UName']=="admin@mail.com" && $_POST['PWord']=="123"){
+			if($_POST['UName']=="admin" && $_POST['PWord']=="123"){
 				echo $this->sendJson(array("message"=>"Welcome"));
 			}else{
 				echo $this->sendJson(array("message"=>"Invalid"));
