@@ -41,8 +41,8 @@
         alert(data.message);
         window.location.href = '<?php echo base_url('login/home'); ?>';
       })
-      .catch(() => {
-          console.log("Network connection error");
+      .catch((err) => {
+          console.log(err);
           alert("Reloading");
       });
   });
