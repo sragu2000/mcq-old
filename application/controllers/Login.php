@@ -7,8 +7,8 @@ class Login extends CI_Controller {
 		header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 		header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
 		parent::__construct();
-		$this->load->model('Mdl_user');
-		$this->load->library('session');
+		//$this->load->model('Mdl_user');
+		//$this->load->library('session');
 	}
 	
 	public function userLogin(){
